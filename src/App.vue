@@ -1,10 +1,22 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  </nav> -->
+  <div>
+    <TabComponent></TabComponent>
+    <router-view/>
+  </div>
 </template>
+<script>
+import TabComponent from '@/components/TabComponent.vue'
+export default {
+  components: {
+    TabComponent
+  }
+}
+</script>
+
 
 <style>
 #app {
@@ -26,5 +38,8 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+a {
+  text-decoration: none;
 }
 </style>

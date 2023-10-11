@@ -41,6 +41,18 @@ export default defineComponent({
   props: {
     msg: String,
   },
+  mounted() {
+    this.testfunc('What is your name');
+    this.testfunc2([1,2,3]);
+  },
+  methods: {
+    testfunc(name:string) {
+      console.log('name : ', name);
+    },
+    testfunc2(names:number[]) {
+      console.log('names : ', names);
+    }
+  }
 });
 </script>
 
