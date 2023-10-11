@@ -5,9 +5,6 @@
       브릿지 테스트 <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1" fill="var(--bs-secondary)" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
     </div>
     <br/>
-    <!-- <select class="form-select form-select-lg mb-3" aria-label="Large select example" v-model="selected" @change="selectFunc()">
-      <option v-for="item in funcStrArr" :key="item.funcName" :value="item.funcName">{{ item.desc }} {{ item.funcName == 'displayHeader'? item.params.isVisible ? '(숨김)': '(보임)': '' }}</option>
-    </select> -->
     <ul class="list-group">
       <li class="list-group-item" v-for="item in funcStrArr" :key="item.funcName" @click="bridgeClick(item)">{{ item.desc }} {{ item.funcName == 'displayHeader'? item.params.isVisible ? '(숨김)': '(보임)': '' }}</li>
     </ul>
